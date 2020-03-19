@@ -1,0 +1,62 @@
+圖檔素材
+https://www.istockphoto.com/hk/
+
+
+http://www.stockq.org/
+
+
+https://www.w3schools.com/css/css_navbar.asp
+https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_sticky
+
+
+http://n.sfs.tw/content/index/10632
+
+打字效果
+https://codertw.com/%E5%89%8D%E7%AB%AF%E9%96%8B%E7%99%BC/229105/
+
+
+官方 Visual Studio Code 快速鍵一覽表
+https://poychang.github.io/vscode-shortcuts/
+
+
+不想放棄設計的前端工程師
+https://medium.com/icguanyu/tagged/notes
+
+
+卡斯伯
+https://wcc723.github.io/archives/
+
+
+一分鐘切換成中文版 VSCode
+https://wcc723.github.io/development/2019/12/01/vscode-chinese/
+
+
+CSS Grid 屬性介紹
+https://wcc723.github.io/css/2017/03/22/css-grid-layout/
+
+如何將這 N個 li 顛倒順序
+https://wcc723.github.io/css/2014/02/26/reverse-element/
+
+利用json取得公開資料
+https://wcc723.github.io/jquery/2013/11/04/js-json2/
+
+利用json取得公開資料(2)
+https://wcc723.github.io/jquery/2013/11/05/js-json3/
+
+利用json取得公開資料(3) 並繪製圖表
+https://wcc723.github.io/jquery/2013/11/06/js-json4/
+
+
+深入解析 CSS Flexbox
+https://www.oxxostudio.tw/articles/201501/css-flexbox.html
+
+
+CSS 垂直置中的七個方法
+https://www.oxxostudio.tw/articles/201502/css-vertical-align-7methods.html
+
+
+變形(transform) 3D基本使用
+https://eyesofkids.gitbooks.io/css3/content/contents/transform3d.html
+
+純 CSS 500個 Icon
+https://css.gg/app
