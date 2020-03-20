@@ -6,11 +6,11 @@ document.write('<table class="cust_apply_tabs" style="min-width: 400px;max-width
 document.write('<tr><th colspan="2" class="cust_modify_title">');
 document.write('　　 會員升級 　 <span id="apply_vip_close" style="cursor: pointer; font-size: 0.7em; vertical-align: top; color:#fff;" title="關閉視窗"><i class="fas fa-compress-arrows-alt"></i></span>');
 document.write('</th></tr>');
-document.write('<tr><td class="cust_apply_td cust_apply_check">升級條碼</td>');
-document.write('<td class="cust_apply_check"><input id="ValidateCode" name="Customer_ValidateCode" class="input w3-border" type="text" required placeholder="請輸入驗證碼" maxlength="64" value="123456789012"></td></tr>');
-document.write('<tr><td class="cust_apply_td cust_apply_check">身分證字號</td>');
+document.write('<tr><td class="cust_apply_td w3-text-red">升級條碼</td>');
+document.write('<td class="w3-text-red"><input id="ValidateCode" name="Customer_ValidateCode" class="input w3-border" type="text" required placeholder="請輸入驗證碼" maxlength="64" value="123456789012"></td></tr>');
+document.write('<tr><td class="cust_apply_td w3-text-red">身分證字號</td>');
 document.write('<td><input id="IdCard" name="IdCard" class="input w3-border" type="text" required placeholder="身分證字號" maxlength="10"></td></tr>');
-document.write('<tr></tr><td class="cust_apply_td cust_apply_check">行動電話</td>');
+document.write('<tr></tr><td class="cust_apply_td w3-text-red">行動電話</td>');
 document.write('<td><input id="Phone1" name="Customer_Phone1" class="input w3-border" type="text" required placeholder="請輸入10碼行動電話 ex: 0937000123" minlength="10" maxlength="10"></td></tr>');
 document.write('<tr><td colspan="2"><button class="w3-button w3-block w3-red w3-right cust_but">送出<i class="fa fa-check"></i></button></td></tr>');
 document.write('</table>');

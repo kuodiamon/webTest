@@ -12,7 +12,7 @@
 
 <body>
   <!-- Logo+Banner STR -->
-  <script src="./js/top.js"></script>
+  <!-- <script src="./js/top.js"></script> -->
   <!-- Logo+Banner END -->
 
   <!-- 一般選單 STR -->
@@ -34,7 +34,7 @@
         <table class="contact_tabs">
           <tr>
             <th colspan="2" class="contact_title">
-              聯絡我們
+              <span class="contact_title_color">聯絡我們</span> <i class="fas fa-user-edit contact_title_color"></i>
             </th>
           </tr>
           <tr>
@@ -44,7 +44,7 @@
           </tr>
           <tr>
             <td colspan="2" class="">
-              <select name="Contact_Category" required class="" style="width: 100%;">
+              <select name="Contact_Category" required class="w3-text-red" style="width: 100%;">
                 <option value="">請選擇您的需求</option>
                 <option value="會員註冊">會員註冊</option>
                 <option value="問題回報">問題回報</option>
@@ -53,16 +53,15 @@
             </td>
           </tr>
           <tr>
-            <td class="cust_apply_td" style="width: 20%; vertical-align: top;">
+            <td class="cust_apply_td w3-text-red" style="width: 20%; vertical-align: top;">
               需求內容
             </td>
             <td class="" style="width: 80%;">
-              <textarea id="Contact_Message" name="Contact_Message" required class="" type="textarea" maxlength="500"
-                rows="8" style="width: 100%;"></textarea>
+              <textarea id="Contact_Message" name="Contact_Message" required class="" type="textarea" maxlength="500" rows="8" style="width: 100%;"></textarea>
             </td>
           </tr>
           <tr>
-            <td class="cust_apply_td">
+            <td class="cust_apply_td w3-text-red">
               您的大名
             </td>
             <td class="">
@@ -71,12 +70,11 @@
             </td>
           </tr>
           <tr>
-            <td class="cust_apply_td">
+            <td class="cust_apply_td w3-text-red">
               聯絡E-mail
             </td>
             <td class="">
-              <input id="Contact_Email" name="Contact_Email" class="input w3-border" type="email" required
-                placeholder="請輸入您的E-mail" minlength="8" maxlength="24">
+              <input id="Contact_Email" name="Contact_Email" class="input w3-border" type="email" required placeholder="請輸入您的E-mail" minlength="8" maxlength="24">
             </td>
           </tr>
           <tr>

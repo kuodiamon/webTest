@@ -12,25 +12,122 @@
 
 <body>
   <!-- Logo+Banner STR -->
-  <script src="./js/top.js"></script>
+  <!-- <script src="./js/top.js"></script> -->
   <!-- Logo+Banner END -->
-  
+
   <!-- 一般選單 STR -->
   <!-- Navbar -->
   <script src="./js/nav.js"></script>
   <!-- 一般選單 END -->
-  
+
   <!-- 漢堡選單 STR -->
   <script src="./js/navdemo.js"></script>
   <!-- 漢堡選單 END -->
 
   <!-- QA STR -->
   <div id="qa">
-    <div id="qa_title">
-      
-    </div>
     <div id="qa_show">
-      
+      <div id="qa_show_top">
+        <div id="qa_title" class="drop-shadow">
+          Q&A
+        </div>
+        <div id="qa_show_nav">
+          <ul>
+            <li id="qa_show_nav_1">加入會員</li>
+            <li id="qa_show_nav_2">升級會員</li>
+            <li id="qa_show_nav_3">延長會員效期</li>
+            <li id="qa_show_nav_4">策略市集無法看到全部內容</li>
+            <li id="qa_show_nav_5">沒有我想看的策略怎麼辦</li>
+            <li id="qa_show_nav_6">無法註冊</li>
+            <li id="qa_show_nav_7"></li>
+            <li id="qa_show_nav_8"></li>
+            <li id="qa_show_nav_9"></li>
+            <li id="qa_show_nav_10"></li>
+          </ul>
+        </div>
+        <div slass="list_item_end"></div>
+      </div>
+      <div id="qa_show_body">
+        <div id="qa_show_body_1">
+          <div>加入會員</div>
+          <div>
+            <p>步驟1.</p>
+            <p>步驟2.</p>
+            <p>步驟3.</p>
+            <p>步驟4.</p>
+            <p>步驟5.</p>
+            <p>步驟6.</p>
+            <p>步驟7.</p>
+            <p>步驟8.</p>
+            <p>步驟9.</p>
+            <p>步驟10.</p>
+          </div>
+        </div>
+
+        <div id="qa_show_body_2" class="div_body_show_def">
+          <div>升級會員</div>
+          <div>
+
+          </div>
+        </div>
+
+        <div id="qa_show_body_3" class="div_body_show_def">
+          <div>延長會員效期</div>
+          <div>
+
+          </div>
+        </div>
+
+        <div id="qa_show_body_4" class="div_body_show_def">
+          <div>策略市集無法看到全部內容</div>
+          <div>
+
+          </div>
+        </div>
+
+        <div id="qa_show_body_5" class="div_body_show_def">
+          <div>沒有我想看的策略怎麼辦</div>
+          <div>
+
+          </div>
+        </div>
+
+        <div id="qa_show_body_6" class="div_body_show_def">
+          <div>無法註冊</div>
+          <div>
+
+          </div>
+        </div>
+
+        <div id="qa_show_body_7" class="div_body_show_def">
+          <div></div>
+          <div>
+
+          </div>
+        </div>
+
+        <div id="qa_show_body_8" class="div_body_show_def">
+          <div></div>
+          <div>
+
+          </div>
+        </div>
+
+        <div id="qa_show_body_9" class="div_body_show_def">
+          <div></div>
+          <div>
+
+          </div>
+        </div>
+
+        <div id="qa_show_body_10" class="div_body_show_def">
+          <div></div>
+          <div>
+
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
   <!-- QA END -->
@@ -39,5 +136,129 @@
   <script src="./js/footer.js"></script>
   <script src="./js/navbody.js"></script>
 
+  <script>
+    $("#qa_show_nav_1").click(function () {
+      $("#qa_show_body_1").show();
+      $("#qa_show_body_2").hide();
+      $("#qa_show_body_3").hide();
+      $("#qa_show_body_4").hide();
+      $("#qa_show_body_5").hide();
+      $("#qa_show_body_6").hide();
+      $("#qa_show_body_7").hide();
+      $("#qa_show_body_8").hide();
+      $("#qa_show_body_9").hide();
+      $("#qa_show_body_10").hide();
+    });
+    $("#qa_show_nav_2").click(function () {
+      $("#qa_show_body_1").hide();
+      $("#qa_show_body_2").show();
+      $("#qa_show_body_3").hide();
+      $("#qa_show_body_4").hide();
+      $("#qa_show_body_5").hide();
+      $("#qa_show_body_6").hide();
+      $("#qa_show_body_7").hide();
+      $("#qa_show_body_8").hide();
+      $("#qa_show_body_9").hide();
+      $("#qa_show_body_10").hide();
+    });
+    $("#qa_show_nav_3").click(function () {
+      $("#qa_show_body_1").hide();
+      $("#qa_show_body_2").hide();
+      $("#qa_show_body_3").show();
+      $("#qa_show_body_4").hide();
+      $("#qa_show_body_5").hide();
+      $("#qa_show_body_6").hide();
+      $("#qa_show_body_7").hide();
+      $("#qa_show_body_8").hide();
+      $("#qa_show_body_9").hide();
+      $("#qa_show_body_10").hide();
+    });
+    $("#qa_show_nav_4").click(function () {
+      $("#qa_show_body_1").hide();
+      $("#qa_show_body_2").hide();
+      $("#qa_show_body_3").hide();
+      $("#qa_show_body_4").show();
+      $("#qa_show_body_5").hide();
+      $("#qa_show_body_6").hide();
+      $("#qa_show_body_7").hide();
+      $("#qa_show_body_8").hide();
+      $("#qa_show_body_9").hide();
+      $("#qa_show_body_10").hide();
+    });
+    $("#qa_show_nav_5").click(function () {
+      $("#qa_show_body_1").hide();
+      $("#qa_show_body_2").hide();
+      $("#qa_show_body_3").hide();
+      $("#qa_show_body_4").hide();
+      $("#qa_show_body_5").show();
+      $("#qa_show_body_6").hide();
+      $("#qa_show_body_7").hide();
+      $("#qa_show_body_8").hide();
+      $("#qa_show_body_9").hide();
+      $("#qa_show_body_10").hide();
+    });
+    $("#qa_show_nav_6").click(function () {
+      $("#qa_show_body_1").hide();
+      $("#qa_show_body_2").hide();
+      $("#qa_show_body_3").hide();
+      $("#qa_show_body_4").hide();
+      $("#qa_show_body_5").hide();
+      $("#qa_show_body_6").show();
+      $("#qa_show_body_7").hide();
+      $("#qa_show_body_8").hide();
+      $("#qa_show_body_9").hide();
+      $("#qa_show_body_10").hide();
+    });
+    $("#qa_show_nav_7").click(function () {
+      $("#qa_show_body_1").hide();
+      $("#qa_show_body_2").hide();
+      $("#qa_show_body_3").hide();
+      $("#qa_show_body_4").hide();
+      $("#qa_show_body_5").hide();
+      $("#qa_show_body_6").hide();
+      $("#qa_show_body_7").show();
+      $("#qa_show_body_8").hide();
+      $("#qa_show_body_9").hide();
+      $("#qa_show_body_10").hide();
+    });
+    $("#qa_show_nav_8").click(function () {
+      $("#qa_show_body_1").hide();
+      $("#qa_show_body_2").hide();
+      $("#qa_show_body_3").hide();
+      $("#qa_show_body_4").hide();
+      $("#qa_show_body_5").hide();
+      $("#qa_show_body_6").hide();
+      $("#qa_show_body_7").hide();
+      $("#qa_show_body_8").show();
+      $("#qa_show_body_9").hide();
+      $("#qa_show_body_10").hide();
+    });
+    $("#qa_show_nav_9").click(function () {
+      $("#qa_show_body_1").hide();
+      $("#qa_show_body_2").hide();
+      $("#qa_show_body_3").hide();
+      $("#qa_show_body_4").hide();
+      $("#qa_show_body_5").hide();
+      $("#qa_show_body_6").hide();
+      $("#qa_show_body_7").hide();
+      $("#qa_show_body_8").hide();
+      $("#qa_show_body_9").show();
+      $("#qa_show_body_10").hide();
+    });
+    $("#qa_show_nav_10").click(function () {
+      $("#qa_show_body_1").hide();
+      $("#qa_show_body_2").hide();
+      $("#qa_show_body_3").hide();
+      $("#qa_show_body_4").hide();
+      $("#qa_show_body_5").hide();
+      $("#qa_show_body_6").hide();
+      $("#qa_show_body_7").hide();
+      $("#qa_show_body_8").hide();
+      $("#qa_show_body_9").hide();
+      $("#qa_show_body_10").show();
+    });
+  </script>
+
 </body>
+
 </html>
