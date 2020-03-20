@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<title>風向基-會員登入-修改-升級VIP</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./css/w3.css">
+<link rel="stylesheet" href="./css/style.css">
+<body>
+  <!-- Logo+Banner STR -->
+  <script src="./js/top.js"></script>
+  <!-- Logo+Banner END -->
+
+  <!-- 一般選單 STR -->
+  <!-- Navbar -->
+  <script src="./js/nav_login.js"></script>
+  <!-- 一般選單 END -->
+
+  <!-- 漢堡選單 STR -->
+  <script src="./js/navdemo.js"></script>
+  <!-- 漢堡選單 END -->
+
+  <!-- 會員申請 STR -->
+  <div id="cust_apply">
+    <table class="cust_apply_tabb">
+      <tr>
+        <td>
+          <form id="custapply" action="" method="get">
+            <table class="cust_apply_tabs">
+              <tr>
+                <th colspan="2" class="cust_modify_title">
+                  會員資料修改
+                </th>
+              </tr>
+              <tr>
+                <td class="cust_apply_td cust_apply_check">
+                  會員效期
+                </td>
+                <td class="cust_apply_check">
+                  <span id="Customer_Validity_Period">2020-05-20</span>　　<a href="#">延長效期</a> <i class="fas fa-donate" style="color:chocolate"></i>
+                </td>
+              </tr>
+              <tr>
+                <td class="cust_apply_td cust_apply_check">
+                  中文姓名
+                </td>
+                <td>
+                  <input id="First_Name_ch" name="Customer_First_Name_ch" class="w3-border" type="text" required
+                    placeholder="姓" maxlength="12" value="郝" disabled>
+                  <input id="Last_Name_ch" name="Customer_Last_Name_ch" class="w3-border" type="text" required
+                    placeholder="名" maxlength="12" value="俊傑" disabled>
+                </td>
+              </tr>
+              <tr>
+                <td class="cust_apply_td">
+                  英文姓名
+                </td>
+                <td>
+                  <input id="First_Name_en" name="Customer_First_Name_en" class="w3-border" type="text"
+                    placeholder="First Name" maxlength="12">
+                  <input id="Last_Name_en" name="Customer_Last_Name_en" class="w3-border" type="text"
+                    placeholder="Last Name" maxlength="12">
+                </td>
+              </tr>
+              <tr>
+                <td class="cust_apply_td">
+                  綽號
+                </td>
+                <td>
+                  <input id="Nick_Name" name="Customer_Nick_Name" class="w3-border" type="text" placeholder="綽號"
+                    maxlength="12" value="俊傑">
+                </td>
+              </tr>
+              <tr>
+                <td class="cust_apply_td">
+                  出生日期
+                </td>
+                <td>
+                  <!-- <input id="Birthday" name="Customer_Birthday" class="w3-border" type="text" placeholder="出生日期" maxlength="12"> -->
+                  <input id="Birthday" name="Customer_Birthday" class="w3-border" type="date" value="2000-01-01"
+                    min="1930-01-01" max="2002-12-31">
+                </td>
+              </tr>
+              <tr>
+                <td class="cust_apply_td">
+                  性別
+                </td>
+                <td>
+                  <input id="Gender_3" name="Customer_Gender" class="no" type="radio" value="3" checked>
+                  <label for="3">其他</label>&nbsp;
+                  <input id="Gender_4" name="Customer_Gender" class="no" type="radio" value="4">
+                  <label for="4">小姐</label>&nbsp;
+                  <input id="Gender_5" name="Customer_Gender" class="no" type="radio" value="5">
+                  <label for="5">先生</label>
+                </td>
+              </tr>
+              <tr>
+                <td class="cust_apply_td cust_apply_check">
+                  帳號
+                </td>
+                <td>
+                  <input id="Email" name="Customer_Email" class="input w3-border" type="email" required
+                    placeholder="請輸入E-mail" minlength="4" maxlength="12" value="abc@123.com" disabled>
+                </td>
+              </tr>
+              <tr>
+                <td class="cust_apply_td cust_apply_check">
+                  密碼
+                </td>
+                <td>
+                  <input id="Password" name="Customer_Password" class="input w3-border" type="password" required
+                    placeholder="請設定8~24碼英文或數字" minlength="8" maxlength="24" value="00000000">
+                </td>
+              </tr>
+              <tr>
+                <td class="cust_apply_td cust_apply_check">
+                  行動電話
+                </td>
+                <td>
+                  <!-- Safari 瀏覽器不支援HTML5的語法: pattern="\d{4}\d{6}" 語法 -->
+                  <!-- <input id="Phone1" class="input w3-border" pattern="\d{4}\d{6}" placeholder="請輸入10碼行動電話 ex: 0937000123" maxlength="10"> -->
+                  <input id="Phone1" name="Customer_Phone1" class="input w3-border" type="tel" required pattern="\d{10}"
+                    placeholder="請輸入10碼行動電話 ex: 0937000123" maxlength="10">
+                </td>
+              </tr>
+              <tr>
+                <td class="cust_apply_td">
+                  Line
+                </td>
+                <td>
+                  <input id="Line1" name="Customer_Line1" class="input w3-border" type="text" placeholder="請輸入Line ID"
+                    maxlength="24">
+                </td>
+              </tr>
+              <tr>
+                <td class="cust_apply_td">
+                  Facebook
+                </td>
+                <td>
+                  <input id="Fb1" name="Customer_Fb1" class="input w3-border" type="email" placeholder="請輸入Facebook帳號"
+                    maxlength="64">
+                </td>
+              </tr>
+              <tr>
+                <td class="cust_apply_td">
+                  興趣
+                </td>
+                <td>
+                  <input id="Interest_6" name="Interest" class="no" type="checkbox" value="6">
+                  <label for="6">旅遊</label>&nbsp;
+                  <input id="Interest_7" name="Interest" class="no" type="checkbox" value="7">
+                  <label for="7">電影</label>&nbsp;
+                  <input id="Interest_8" name="Interest" class="no" type="checkbox" value="8">
+                  <label for="8">音樂</label>&nbsp;
+                  <input id="Interest_9" name="Interest" class="no" type="checkbox" value="9">
+                  <label for="9">美食</label>
+                </td>
+              </tr>
+              <tr>
+                <td class="cust_apply_td">
+                  訊息通知
+                </td>
+                <td>
+                  <input id="message_10" name="message" class="no" type="checkbox" value="10" checked>
+                  <label for="6">E-mail</label>&nbsp;
+                  <input id="message_11" name="message" class="no" type="checkbox" value="11">
+                  <label for="7">簡訊</label>&nbsp;
+                  <input id="message_12" name="message" class="no" type="checkbox" value="12" disabled>
+                  <label for="8">電子報</label>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <!-- 超連結為模擬流程用 -->
+                  <!-- <a class="w3-button w3-block w3-red w3-right cust_but" href="index.html" onClick="choice(this.form)">送出 <i class="fa fa-check"></i></a> -->
+                  <!-- 套程式請解開以下註解 -->
+                  <button class="w3-button w3-block w3-red w3-right cust_but" onClick="choice(this.form)">送出<i
+                      class="fa fa-check"></i></button>
+                </td>
+              </tr>
+            </table>
+          </form>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- 會員申請 END -->
+
+  <!-- Footer -->
+  <script src="./js/footer.js"></script>
+
+  <script src="./js/navbody.js"></script>
+
+  <!-- 會員升級視窗 -->
+  <script src="./js/cust_modify_vip.js"></script>
+  <script src="./js/cust_modify_vip_body.js"></script>
+  <!-- <div id="apply_vip" class="cust_modify_vip_modal">
+    <div class="cust_modify_vip_modal_content">
+      <div class="w3-container">
+        <form id="custapply" action="" method="get">
+          <table class="cust_apply_tabs" style="min-width: 400px;max-width: 520px;">
+            <tr>
+              <th colspan="2" class="cust_modify_title">
+                　　 會員升級 　 <span id="apply_vip_close" style="cursor: pointer; font-size: 0.7em; vertical-align: top; color:#fff;" title="關閉視窗"><i class="fas fa-compress-arrows-alt"></i></span>
+              </th>
+            </tr>
+            <tr>
+              <td class="cust_apply_td cust_apply_check">
+                升級條碼
+              </td>
+              <td class="cust_apply_check">
+                <input id="ValidateCode" name="Customer_ValidateCode" class="input w3-border" type="text" required placeholder="請輸入驗證碼" maxlength="64" value="123456789012">
+              </td>
+            </tr>
+            <tr>
+              <td class="cust_apply_td cust_apply_check">
+                身分證字號
+              </td>
+              <td>
+                <input id="Id_Card" name="Customer_Id_Card" class="input w3-border" type="text" required placeholder="身分證字號"
+                  maxlength="10">
+              </td>
+            </tr>
+            <tr>
+              <td class="cust_apply_td cust_apply_check">
+                行動電話
+              </td>
+              <td>
+                <input id="Phone1" name="Customer_Phone1" class="input w3-border" type="tel" required pattern="\d{10}"
+                  placeholder="請輸入10碼行動電話 ex: 0937000123" maxlength="10">
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                超連結為模擬流程用
+                <a class="w3-button w3-block w3-red w3-right cust_but" href="./cust_modify_vip.html">送出 <i class="fa fa-check"></i></a>
+                套程式請解開以下註解
+                <button class="w3-button w3-block w3-red w3-right cust_but">送出<i class="fa fa-check"></i></button>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+  </div> -->
+  <!-- <script>
+    $("#nav_cust_apply_vip").click(function () {
+      $("#apply_vip").toggle();
+    });
+    $("#apply_vip_close").click(function () {
+      $("#apply_vip").toggle();
+    });
+  </script> -->
+
+</body>
+
+</html>

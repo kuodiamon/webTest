@@ -1,0 +1,10 @@
+document.write('<div id="bannerMax">');
+document.write('<div id="bannerMin">');
+document.write('<div class="typing typing-item">');
+document.write('<span class="top-Text">');
+document.write('<span class="top-Text">迴避基金<span class="top-R">風</span>, </span>');
+document.write('<span class="top-Text">險尋找投資方<span class="top-R">向</span>, </span>');
+document.write('<span class="top-Text">一鍵分析<span class="top-R">基</span>金策略</span>');
+document.write('</div>');
+document.write('</div>');
+document.write('</div>');

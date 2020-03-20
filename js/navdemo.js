@@ -1,0 +1,10 @@
+document.write('<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top">');
+document.write('<a href="strategy.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">策略(演算法)市集</a>');
+document.write('<a href="tools.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">計算機工具</a>');
+document.write('<a href="school.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">投資小學堂</a>');
+document.write('<a href="case.htnml" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">重大事件</a>');
+document.write('<a href="qa.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Q&A</a>');
+document.write('<a href="contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">聯絡我們</a>');
+document.write('<a href="about.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">關於我們</a>');
+document.write('<a href="cust_login.html" class="w3-bar-item w3-button w3-padding-large w3-hover-red">會員登入</a>');
+document.write('</div>');

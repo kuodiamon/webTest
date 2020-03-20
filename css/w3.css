@@ -468,7 +468,7 @@ a {
   width: auto;
 }
 .w3-bar .w3-bar-item {
-  padding: 8px 16px;
+  padding: 8px 12px; /* def: 8px 16px */
   float: left;
   width: auto;
   border: none;
@@ -1192,8 +1192,10 @@ a {
 }
 /* 滑鼠事件hover顏色設定 */
 .w3-button:hover {
-  color: #000 !important;
-  background-color: #5CC8F2 !important;
+  color: #fff !important;
+  /* background-color: #5CC8F2 !important; */
+  background: linear-gradient( #44aff2,#132f40);
+  /* font-weight: 600; */
 }
 .w3-transparent,
 .w3-hover-none:hover {
@@ -1294,7 +1296,8 @@ a {
 .w3-red,
 .w3-hover-red:hover {
   color: #fff !important;
-  background-color: #F24C3D !important;
+  /* background-color: #F24C3D !important; */
+  background: linear-gradient( rgb(255, 196, 0),rgb(255, 21, 0));
 }
 .w3-sand,
 .w3-hover-sand:hover {

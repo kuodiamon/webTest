@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<title>風向基-會員登入</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./css/w3.css">
+<link rel="stylesheet" href="./css/style.css">
+<body>
+<!-- Logo+Banner STR -->
+<script src="./js/top.js"></script>
+<!-- Logo+Banner END -->
+
+<!-- 一般選單 STR -->
+<!-- Navbar -->
+<script src="./js/nav.js"></script>
+<!-- 一般選單 END -->
+
+<!-- 漢堡選單 STR -->
+<script src="./js/navdemo.js"></script>
+<!-- 漢堡選單 END -->
+
+<!-- 會員登入 STR -->
+<div id="cust_login">
+  <table class="cust_login_tabb">
+    <tr>
+      <td>
+        <form id="custlogin" action="" method="">
+          <table class="cust_login_tabs">
+            <tr>
+              <th colspan="2" class="cust_login_title">
+                <i class="fas fa-user-shield"></i> 會員登入
+              </th>
+            </tr>
+            <tr>
+              <td class="cust_login_td">
+                <i class="fas fa-feather-alt"></i>帳號
+              </td>
+              <td class="cust_login_td">
+                <input id="Email" name="Customer_Email" class="w3-input w3-border" type="email" required placeholder="請輸入您的帳號" maxlength="64">
+              </td>
+            </tr>
+            <tr>
+              <td class="cust_login_td">
+                <i class="fas fa-cat"></i>密碼
+              </td>
+              <td class="cust_login_td">
+                <input id="Password" name="Customer_Password" class="w3-input w3-border" type="password" required placeholder="請輸入您的密碼" minlength="8" maxlength="24">
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="cust_login_td">
+                <!-- 超連結為模擬流程用 -->
+                <a class="w3-button w3-block w3-red cust_but" href="cust_login_ok.html">送出 <i class="fa fa-check"></i></a>
+                <!-- 套程式請解開以下註解 -->
+                <!-- <button class="w3-button w3-block w3-red">送出<i class="fa fa-check"></i></button> -->
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="cust_login_td" style="text-align: center;">
+                <a href="cust_apply.html" class="w3-text-blue">申請會員</a>　　　　
+                <a href="#" class="w3-text-blue">忘記密碼</a>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </td>
+    </tr>
+  </table>      
+</div>
+<!-- 會員登入 END -->
+
+<!-- 忘記密碼 STR -->
+<div id="cust_pw">
+  <table class="cust_login_tabb">
+    <tr>
+      <td>
+        <form id="custCF" action="" method="post">
+          <table class="cust_login_tabs">
+            <tr>
+              <th colspan="2" class="cust_login_title">
+                <i class="fas fa-user-shield"></i> 忘記密碼
+              </th>
+            </tr>
+            <tr>
+              <td class="cust_login_td">
+                <i class="fas fa-feather-alt"></i>申請時E-mail
+              </td>
+              <td class="cust_login_td">
+                <input id="CFEmail" name="Customer_Email" class="w3-input w3-border" type="email" required placeholder="請輸入E-mail" maxlength="64">
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="cust_login_td">
+                <button class="w3-button w3-block w3-red cust_but">送出 <i class="fa fa-check"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="cust_login_td" style="text-align: right;">
+                <i class="fas fa-user-plus"></i> <a href="contact.html" class="w3-text-blue">求助</a>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </td>
+    </tr>
+  </table>
+</div>
+<!-- 忘記密碼 END -->
+
+<!-- Footer -->
+<script src="./js/footer.js"></script>
+
+<script src="./js/navbody.js"></script>
+
+</body>
+</html>

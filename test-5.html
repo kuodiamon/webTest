@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ch">
+<title>風向基-樣板1-會員登入</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <!-- Logo+Banner STR -->
+    <script src="top.js"></script>
+    <!-- Logo+Banner END -->
+    
+    <!-- 一般選單 STR -->
+    <!-- Navbar -->
+    <script src="nav.js"></script>
+    <!-- 一般選單 END -->
+
+    <!-- 漢堡選單 STR -->
+    <script src="navdemo.js"></script>
+    <!-- 漢堡選單 END -->
+
+    <!-- 會員登入 STR -->
+    <div id="cust_login">
+        <div id="cust_login_left">
+            <img src="./images/cust_login.jpg" style="width: 100%;">
+        </div>
+        <div id="cust_login_right">
+            <div class="w3-container">
+                <p><label><i class="fa fa-shopping-cart"></i>帳號</label></p>
+                <input class="w3-input w3-border" type="text" placeholder="您的大名">
+                <p><label><i class="fa fa-user"></i>密碼</label></p>
+                <input class="w3-input w3-border" type="text" placeholder="請輸入E-mail"">
+                <button class=" w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">送出<i class="fa fa-check"></i></button>
+                <button class="w3-button w3-red w3-section"
+                    onclick="document.getElementById('mbLogin').style.display='none'">關閉<i
+                        class="fa fa-remove"></i></button>
+                <p class="w3-right"><a href="#" class="w3-text-blue">忘記密碼</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- 會員登入 END -->
+
+    <!-- Footer -->
+    <script src="footer.js"></script>
+
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace("w3-show", "");
+            }
+        }
+    </script>
+</body>
+</html>

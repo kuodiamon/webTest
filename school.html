@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+<title>風向基-投資小學堂</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./css/w3.css">
+<link rel="stylesheet" href="./css/style.css">
+
+<body>
+  <!-- Logo+Banner STR -->
+  <script src="./js/top.js"></script>
+  <!-- Logo+Banner END -->
+
+  <!-- 一般選單 STR -->
+  <!-- Navbar -->
+  <script src="./js/nav.js"></script>
+  <!-- 一般選單 END -->
+
+  <!-- 漢堡選單 STR -->
+  <script src="./js/navdemo.js"></script>
+  <!-- 漢堡選單 END -->
+
+  <!-- 投資小學堂 STR -->
+  <div id="school">
+    <div id="school_Th">投資小學堂</div>
+    <!-- 預設顯示區 -->
+    <div id="school_index">
+      <div id="school_item_01" class="school_show school_show_color1">甚麼是指數</div>
+      <div id="school_item_02" class="school_show school_show_color2">甚麼是MSCI</div>
+      <div id="school_item_03" class="school_show school_show_color1">MSCI指數有</div>
+      <div id="school_item_04" class="school_show school_show_color2">MSCI季度調整</div>
+      <div id="school_item_05" class="school_show school_show_color1">VIX指數</div>
+      <div id="school_item_06" class="school_show school_show_color2">ETFs</div>
+      <div id="school_item_07" class="school_show school_show_color1">MACD</div>
+      <div id="school_item_08" class="school_show school_show_color2">PVI</div>
+      <div id="school_item_09" class="school_show school_show_color1">RSI</div>
+      <div id="school_item_10" class="school_show school_show_color2">K線圖</div>
+      <div id="school_item_11" class="school_show school_show_color1">β值</div>
+      <div id="school_item_12" class="school_show school_show_color2">乖離率</div>
+      <div id="school_item_13" class="school_show school_show_color1">河流圖</div>
+      <div id="school_item_14" class="school_show school_show_color2">威廉指標</div>
+      <div id="school_item_15" class="school_show school_show_color1">OBV</div>
+    </div>
+    
+    <!-- 預設隱藏區 -->
+    <div id="school_show">
+      <div id="school_show_01" class="school_chow_def">
+        <div class="school_show_body">
+          <div class="school_show_title">甚麼是指數</div>
+          <p>看一個數字就能了解市場全貌，這就是<span class="content_txt_red">指數(Index)</span><br>
+            舉例來說，我要怎麼很快速地了解台股近期整體的表現？<br>
+            我不可能只看幾檔股票做出判斷，即使是台積電也沒辦法，但透過台股加權指數，就能一次看到整體的全貌。</p>
+          <p>較常聽見的包含 道瓊指數、S&P指數、那斯達克指數、香港恆生指數、日經、台股加權指數
+            等，世界上有許多行業會需要一些標準去評估某些市場的變化，但由他們自己研究的成本太高，透過這些指數可以方便他們快速做出判斷。<br>
+            <p>MSCI則是編制這些指數其中的一間公司<br>
+              比方說，一個身在美國的債券研究員，受指派要研究日本的產業動態，他不必自己費一番工夫做市場調查，只需要參考日本相關的指數就可以得到許多主要資訊。<br>
+              目前全球市場上幾乎每一個研究員、交易員、基金經理、學者，幾乎都會參考MSCI的指數做出判讀，以了解他們自身能力無法研究的地方。<br>
+              也因為涵蓋各種市場，它可以作為基金的評估基準(benchmark)，許多基金經理人或指數型基金，都會直接以它的成分股做為買賣標的，每當調整或變動，都會對市場產生龐大的影響力。</p>
+            <p>編制指數等同於制定標準，通常選用最具代表性的數據<br>
+              就如同英文的考多益、考托福一樣，標準制定的好，就有很多人因此受惠，制定不好，整個社會的成本都會因此增加。<br>
+              大多數時間，你必須相信他們的制定標準公平公正公開，但只要有一兩個重大錯估，就會讓很多人蒙受重大虧損 (也讓另一群人大賺一筆)，所以說這些指數的制定者就是左右這市場的幕後黑手也不為過。</p>
+        </div>
+      </div>
+
+      <div id="school_show_02" class="school_chow_def">
+        <div class="school_show_body">
+          <div class="school_show_title">甚麼是MSCI</div>
+          <p><span class="content_txt_red">MSCI</span>是摩根士丹利資本國際公司（Morgan Stanley Capital International）的縮寫</p>
+          <p>即一般所稱的 大摩 (小摩是指 摩根大通 JP
+            Morgan，為純商業銀行)，主要業務為證券和投資管理，範圍包山包海，(包含股票、債券、外匯、基金、期貨、投資銀行、證券包銷、企業金融咨詢、機構性企業營銷、房地產、私人財富管理、直接投資、機構投資管理等)。</p>
+          <p>關於摩根士丹利這間公司的起源，有個小故事</p>
+          <p>摩根士丹利原本為隸屬 摩根大通 的一個投資部門，當時遇到1929年的大蕭條，股票市場大跌，大家都很怕銀行倒閉，於是1933年頒布一條銀行法(Glass-Steagall
+            Act法案，於1999年廢除)，簡單來說，這條法令禁止銀行去拿你的存款去亂投資賠光，所以強制銀行部門和投資部門分拆開來。<br>
+            摩根大通於當時便分拆成兩間公司，規模仍是商業銀行的 摩根大通 比較大。</p>
+          <p>目前摩根士丹利是世界主要指數的供應商之一。</p>
+        </div>
+      </div>
+
+      <div id="school_show_03" class="school_chow_def">
+        <div class="school_show_body">
+          <div class="school_show_title">MSCI指數有哪些</div>
+          <p>MSCI制定的指數遍及世界各個市場，<br>
+            主要以國家 (ex:日本指數、韓國指數)、地區 (ex:歐元區指數、北美洲指數)、產業 (ex:能源指數、航運指數)作為區分。<br>
+            其中有一些與台灣市場關係很大。</p>
+          <p>與台灣有關的國家指數：<br>
+            MSCI台灣指數由100間台灣企業作為成分股構成，反映台股的企業成長與市場氣氛。<br>
+            組成的成分股很容易GOOGLE到。<br>
+            如果你想挑幾檔安全且外資青睞的股票，這個清單可以列入考慮。</p>
+        </div>
+      </div>
+
+      <div id="school_show_04" class="school_chow_def">
+        <div class="school_show_body">
+          <div class="school_show_title">MSCI季度調整</div>
+          <p>MSCI成分股於每年2月底、5月底 、8月底、11月底這些時間會調整也就是在台灣新聞常會聽到的「MSCI季度調整」<br>
+            通常會提造20天公告調整的內容<br>
+            調整則在當天收盤後生效，指數會變成調整後的數值。<br>
+            例如8月底的調整，大約會在8月10日左右公布調整內容，並且在9/1日正式生效，而在前一天8/31收盤前通常股價會有很大的成交量。</p>
+          <p>每當MSCI成分股有股票被列入或剔除，價格在實際調整當天很容易因此有劇烈波動，<br>
+            列入MSCI的股票，是否一定會漲?<br>
+            剔除MSCI的股票，是否一定會跌?<br>
+            能確定的是調整當天股價成交量和波動性都會比較大。<br>
+            通常是外資和指數型基金所造成的短暫的買賣壓，畢竟這些成分股是他們選股的依據，價格一般很快會恢復到原來的水平，其實20天前就已公布過資料，被列入或剔除成分股的漲跌幅通常提早已反映，急促的暴漲暴跌通常只是因為大幅持股調整造成。
+          </p>
+        </div>
+      </div>
+
+      <div id="school_show_05" class="school_chow_def">
+        <div class="school_show_body">
+          <div class="school_show_title">VIX指數</div>
+          <p>VIX 指數（芝加哥選擇權交易所波動率指數、Chicago Board Options Exchange Volatility Index)， 用以反映 S&P
+            500指數期貨的波動程度，測量未來三十天市場預期的波動程度，通常用來評估未來分險， 因此波動率指數也有人稱作恐慌指數。</p>
+          <p>VIX 指數雖然是反映未來三十天的波動程度，卻是以年化百分比表示，並且以常態分布的機率出現。 舉例來說，假設 VIX 指數為 15，表示預期的年波動率為 15%，因此接下來三十天預期的波動率的標準差為4.33%，
+            也就是 S&P 500 指數三十天後波動在正負4.33%以內的機率是 68% (常態分布 normal distribution 正負一個標準差所涵蓋的機率68%，正負兩個標準差的機率是 95%)。
+            換句話說，三十天後，有 68% 的可能性 S&P 500 最多漲跌 4.33% 以內。</p>
+          <p>通常 VIX 指數超過 40 時，表示市場對未來的非理性恐慌，可能於短期內出現反彈。 相對的，當 VIX 指數低於 15，表示市場出現非理性繁榮(irrational exuberance)，
+            可能會伴隨著賣壓殺盤。<br>
+            即使在1998年的金融風暴時，VIX指數也未曾超過60，VIX 指數不一定能準確預測走向，但是多少反映當時市場的氣氛。</p>
+        </div>
+      </div>
+
+      <div id="school_show_06" class="school_chow_def">
+        <div class="school_show_body">
+          <div class="school_show_title">ETFs</div>
+          <p>ETF的英文全稱是Exchange Traded Funds，它在中國大陸被譯為“交易所交易基金”，在香港被譯為“交易所買賣基金”，在臺灣被譯為“指數股票型基金”。</p>
+          <p>
+            ETF是一種跟蹤市場指數、可以在交易所自由買賣的開放式股票基金。可以把ETF理解為一種特殊形式的基金：基金公司把構成某個指數的各個成份股，按照在該指數中的構成比例一一買來，匯合到一起形成基金，然後再分成許多小基金單位，拿到股市上賣，就成了可以自由買賣的ETF基金。投資者買一隻ETF就相當於建立了包含這個指數裏所有成份股的投資組合。
+          </p>
+        </div>
+      </div>
+
+      <div id="school_show_07" class="school_chow_def">
+        <div class="school_show_body">
+          <div class="school_show_title">MACD</div>
+          <p>MACD的英文原名為 Moving Average Convergnece &
+            Divergence，也就是收斂發散移動平均線的意思，所以顧名思義它是移動平均線的一種。這個指標在技術分析各指標當中，算是極普遍又有名的一個。以下是MACD的計算步驟，附表1即為MACD的計算範例：</p>
+          <p>1.計算出真實成本：<br>
+            　Pt=Ct ´ 1/2 + Ht ´ ¼ + Lt ´ ¼ 其中 Ct為收盤價， Ht為最高價， Lt為最低價</p>
+          <p>2.計算兩條平滑平均線 12EMA與26EMA<br>
+            　Et = Et-1 + α ´ ( Pt – Et-1 )<br>
+            　其中 Et為當日平滑平均值， Et-1為前一日平滑平均值， Pt為當日真實成本，<br>
+            　α= 2 / ( 1+ MA) ； MA = 平均天數 (即=12或26 )</p>
+          <p>3.計算正負差線<br>
+            　DIF = 12EMA – 26EMA</p>
+          <p>4. 計算MACD線(或稱EDA線)<br>
+            　將DIF線取九天EMA平均值即得</p>
+          <p>5.柱線 = DIF線–MACD線</p>
+          <p>一般說來，MACD指標可以說是一個非常優秀的指標，也正因為如此，所以它才會那麼廣受歡迎。<br>
+            這指標有三種不同的研判方式，不論是對長期的趨勢，或是中期波段的研判，乃至於短線行情的判別，都可以使用。</p>
+          <p>在研判長線趨勢上，就是12日EMA與26日EMA兩條均線的交叉點，<br>
+            當12EMA從下方往上突破26EMA時，就是黃金交叉點，交叉之前兩條均線呈現空頭排列，交叉後變成多頭排列；<br>
+            當12EMA從上方跌破26EMA時，就是死亡交叉，交叉前兩均線多頭排列，之後變成空頭排列。</p>
+          <p>若從中期的波段觀點來看，則是DIF與MACD兩條線的交叉點作為研判買賣的訊號，同樣的，向上的黃金交叉為買點，向下的死亡交叉為賣點。</p>
+          <p>最後再從短線的觀點來看，就是利用圖下方的柱狀線來判別，當柱線「從長到短」的時候就是短線變盤的時刻，在0軸以上從長變短就是賣出訊號，在0軸以下從長變短就是買進訊號，</p>
+        </div>
+      </div>
+
+      <div id="school_show_08" class="school_chow_def">
+        <div class="school_show_body">
+          <div class="school_show_title">PVI</div>
+          <p>PVI ( Positive Volume Index ) 正量指標 及 NVI ( Negative Volume Index ) 負量指標<br>
+            這兩個指標必須放在一起看，才能對股票量價的變動有整體的瞭解．基本上這兩個指標是用來體現所謂的「量價關係」，從指標的變動方向與股價的變動方向來綜合研判價格未來可能的變化方向．</p>
+          <p>1. PVI的計算公式如下：<br>
+            假如 今日成交量「大於」昨日成交量，則<br>
+            　　 今日PVI = 昨日 PVI + 今日股價漲跌幅<br>
+            否則 今日PVI = 昨日 PVI + 0</p>
+          <p>2. NVI的計算公式如下：<br>
+            假如 今日成交量「小於」昨日成交量，則<br>
+            　　 今日NVI = 昨日 NVI + 今日股價漲跌幅<br>
+            否則 今日NVI = 昨日 NVI + 0</p>
+          <p>
+            這個兩個指標的設計原理，是先從量的變動，再來算出價格變動的累計值．所以在看正量指標PVI時，一定要牢記它指的是「量增」時的情況，這條線如果向上，那是代表「量增價漲」的所謂「量價配合」的情況，PVI線如果向下的話，那麼代表的是「量增價跌」的所謂「量價背離」的情況，也就是暗示投資人對股價有「恐慌」的意味．所以，PVI線如果長期向上則是正常的，表示股價長期間量價配合，反之，如果長期向下，則是不正常的，表示長期量價背離，空頭的力道強勁．
+          </p>
+          <p>
+            而在看負量指標NVI時，一定要牢記它指的是「量縮」時的情況，這條線如果向上，那是代表「量縮價漲」的所謂「量價背離」的情況，也就是暗示投資人對股價有「惜售」的意味．NVI線如果向下的話，那麼代表的是「量縮價跌」的所謂「量價配合」的情況．所以，NVI線如果長期向下則是正常的，表示股價長期間量價配合，反之，如果長期向上，則是不正常的，表示長期量價背離，股價惜售，多頭的力道強勁．
+          </p>
+        </div>
+      </div>
+
+      <div id="school_show_09" class="school_chow_def">
+        <div class="school_show_body">
+          <div class="school_show_title">RSI</div>
+          <p>RSI (Relative Strength Index)指標<br>
+            RSI中文名稱為「相對強弱指標」，這指標為威爾德(Wilder)在1978年6月號的「商品」(現稱為「期貨」)月刊上所發表的指標。但這個名稱取得不是很恰當，很容易引起誤解，因為一般在技術分析上所稱的「相對(Relative)」指的是在兩個不同個股之間價格的比較，這個指標稱為「買賣盤強弱指標」或許會更恰當些。
+          </p>
+          <p>RSI的計算公式如下：<br>
+            RSI = 100 －（ 100 ／　( 1 + RS ) ） 其中　RS= UP / DN<br>
+            　　　　　　　　　　　　　　　<span class="content_txt_red">期間內絕對漲幅 UP / DN 期間內絕對跌幅</span></p>
+          <p>在實用上而言，這個公式的表述方式並不理想，無法讓人一眼就看出其真正的意義，所以我們要把它改寫為下式：<br>
+            RSI = 100 – ( 100 / ( 1 + UP/DN ) ) = 100-(100 / ( ( DN+UP ) / DN) )<br>
+            　　= 100-( 100 * DN / ( DN+UP ) ) = 100* (1 – DN / ( DN+UP ) )<br>
+            　　= 100 * UP / ( DN+UP )</p>
+          <p>我們只要記得最後的等式即可，也就是 RSI= UP / ( DN+UP ) * 100<br>
+            這個公式的意思是指，在期間內的「絕對漲幅佔絕對漲幅與絕對跌幅合計值的百分比」。這樣的表述法不是更容易理解嗎？</p>
+          <p>下表是RSI指標的計算說明如下：<br>
+            將B欄的每日收盤價與前一日收盤價相比，如果上漲，那麼將漲幅寫在第C欄，D欄當日的數字就填入零；<br>
+            如果下跌，那麼在D欄寫上「跌幅的絕對值」，C欄當日的值就填入零；如果當日股價與前一日股價相比沒有漲跌，那麼C與D欄都填入零。<br>
+            注意C欄與D欄的數字，最多一定只有一個不是零(也可能兩個同時為零)。<br>
+            有了C、D兩欄的數字後，我們就要對這兩欄數字各求其平滑平均值，使用的方法稱為威爾德平滑法 ( Wilder’s Smoothing)，求E欄數字的方式如下：<br>
+            UP t = UP t-1 + 1 / N ( Ut – UP t-1 )</p>
+          <p>其中 N 為平滑平均天數， t 為當日值， t-1 為前一日值<br>
+            我們取六天平均為例，所以 N=6，在E欄中，除了第一個數字0.45667，為C欄的前6日數字的簡單平均值之外，其他的數字全部以上面的威爾德平滑公式算出。<br>
+            例如第2個數字0.38056是由 0.45667 + 1/6 ( 0-0.45667 )，第3個數字 0.31713 = 0.38056+1/6(0-0.38056)，其餘以此類推。<br>
+            F欄的計算方式同E欄。<br>
+            第G欄的數字是將 E、F兩欄數字相加當分母， E欄數字當分子，兩者相除再乘以100%而得。<br>
+            G欄的數字就是RSI指標的值。</p>
+          <p>威爾德平滑法略加說明，將這個公式改寫一下：<br>
+            UP t = UP t-1 + 1/N ( Ut – UP t-1 )<br>
+            　　 = UP t-1 + 1/N Ut – 1/N UP t-1<br>
+            　　 = ( 1 – 1/N ) UP t-1 + 1/N Ut</p>
+          <p>最後的公式其實與我們算KD指標的公式是完全一樣的，可知威爾德式平滑法就是我們常用的
+            KD式平滑法。在使用這個指標時，必需要注意因為它在初始值時，是會逐漸收斂的，也就是必須要經過一段時間收斂後的數字才會穩定而正確，因此要採用這種平滑方式時，最好把資料再往前多推一段時間才會比較準確。比如說，要算6天均值，一般是要往前多推5天的數字，第一個平均值才會是6天均值，在算RSI時，最好將資料往前推6天均值的3倍18天，那麼圖形開始的數字才會比較正確。
+          </p>
+          <p>RSI指標的研判方式，從觀察較大的格局到較細的進出時點，約有以下幾種：<br>
+            1.以50為界，50以上區域為多頭走勢區域，50以下為空頭走勢區域，從我們上面所述的 UP / ( DN + UP ) 公式，可以很容易理解這個意義。<br>
+            2.觀察RSI指標值的高點連線或低點連線的方向，與股價變動方向的差異，可以很容易看出是否有「背離」的情形。<br>
+            3.RSI指標值在20以下為超賣區，表示賣過頭了，行情可能向上反彈，所以低於20應是買點。而RSI指標值在80以上為超買區，表示買過頭了，行情可能下跌，所以高於80應是賣點。<br>
+            4.國內投資人習慣將兩條不同天期(通常為6天與12天)的RSI值畫在一起，觀察兩者的交叉點作為研判買賣的依據，當短天期RSI由下往上突破長天期RSI則為黃金交叉的買點，否則就是死亡交叉的賣點。不過用這種方式所得到的買賣點出現次數過於頻繁，不宜只以此點來研判進出點。
+          </p>
+        </div>
+      </div>
+
+      <div id="school_show_10" class="school_chow_def">
+        <div class="school_show_body">
+          <div class="school_show_title">K線圖</div>
+          <p>K線圖(Rosokuashi Chart)又稱為陰陽線、酒井線或者是蠟燭線，在開始時是流行於日本，應用在米價價位圖形的繪製畫法。它在繪製的方式上，除了如同 Bar Chart
+            圖標出了行情的開高低收的價位外，甚至於應用陰陽明暗與顏色區分於圖形上，以明顯地表達出行情的上漲或下跌，因此被稱之為陰陽線。同時也因為它所繪製出的商品價位圖，樣子像是一根一根蠟燭所組合起來的線圖，所以又被稱之為蠟燭線。
+          </p>
+          <p>
+            在K線圖的繪製上，相對於每日行情的每一根線圖上，上影線的最高部位，即為當日行情最高價位值的所在處；而下影線的最低部位，則為當日行情最低價位值的所在處。中間的實體部份的二端，則代表著開盤價與收盤價位值的所在處，同時以陰（實心黑色）與陽（空心紅色）來表示收盤價位相較於開盤價是下跌或是上漲。
+          </p>
+          <p>K線圖的繪製法<br>
+            在K線圖上，由於有了顏色管理的理念，因此比起 Bar Chart
+            來，K線圖更容易看出行情的漲與跌來。甚至於可以針對K線圖上實體部份的大小變化，來研判當日行情的氣勢與強弱度。例如呈現上漲的陽線，收盤時價位高於開盤時價位者，即有四種不同的強弱狀況：</p>
+          <p>
+            <ul>
+              <li>只有陽紅實體，而沒有上下影線者，即行情自開盤一路上漲至收盤為止，俗稱此線為大陽線。</li>
+              <li>陽紅實體而沒有下影線者，即行情自開盤後即一路上漲，但在收盤前出現了拉回狀況，而留下了上影線。</li>
+              <li>陽紅實體而沒有上影線者，即行情開盤後曾經下挫而留下下影線，但後來在收盤前，行情一路上揚，甚至以當日的最高價位收盤。</li>
+              <li>陽紅實體有上下影線者，即行情自開盤後上下震盪，而最後行情乃以高於開盤的價位收盤結束。雖然從圖上不能得知行情震盪漲跌的先後次序，但是仍然可以依據上下影線的長短與實體的大小來分別出走勢的強弱。</li>
+            </ul>
+          </p>
+          <p>同理，對於下跌的陰線而言，也像陽線一樣有四種不同的強弱變化。即下跌大陰線、只有下影線之下跌陰線、只有上影線之下跌陰線與上下影線都有的下跌陰線四種。<br>
+            除此外，行情線圖上也可能出現沒有實體部份的線型，亦即當開盤與收盤在同個一價位時，因此線圖上的實體部份變成為一條橫線。這類的線型同樣有四種不同的變化：</p>
+          <p>
+            <ul>
+              <li>
+                十字線，行情留有上下影線，經過一番拉拒後，多空雙方勢均力敵。雖然從圖上不能得知行情震盪漲跌的先後次序，但是可以依據上下影線的長短大小來分出雙方氣勢的強弱，即上影線愈長即表示賣壓愈重，反之下影線愈長表示買進力道愈強。當十字線出現時，常常是行情即將轉折反轉的前兆，因此又被之稱為轉機線。
+              </li>
+              <li>一字線，行情沒有留下上下影線，開盤價、最高價、最低價與收盤價相同，行情自始至終只有一個價位。這種情況只有出現在行情呈現極端漲勢或跌勢時，跳空漲停或是跳空跌停時，要不就是行情交易相當冷清，成交極小的情況下。
+              </li>
+              <li>T字線，行情留有下影線者，儘管開盤後下挫，但經過買方的一番拉抬後與支撐後，扳回到原先開盤的局面。</li>
+              <li>反T字線，行情留有上影線者，儘管行情開盤後上揚，但遭遇到賣方拋出的壓力，又退回到開盤時的局面。</li>
+            </ul>
+          </p>
+          <p>除了針對K線本身實體與上下影線的研判外，相鄰線型之間的包含程度、陰陽反轉變化、跳空等等許多線型變化，也都是洞察走勢強弱的良好依據。同時K線圖也可以應用做各種線形研判，如切線、支撐線、壓力線、頭肩底部與波段走勢等等。
+          </p>
+        </div>
+      </div>
+
+      <div id="school_show_11" class="school_chow_def">
+        <div class="school_show_body">
+          <div class="school_show_title">β值</div>
+          <p>
+            β值是指個股的股價變動與市場大盤指數變動的相關性，也就是當市值平均上漲／下跌1%時，個股的漲跌幅將為β%的水準。當貝他值大於1時，顯示個股的股價波動程度將高過市場，這種標的適合較積極性的投資人。反之，若β值小於1，則表示個股的股價波動程度會較市場平均值穩定，這種標的則較適合保守型的投資人。
+          </p>
+          <p>由於股價波動程度是決定權證價值的重要因素，因此在其他條件一樣下，β值較高的權證應優先考量。</p>
+        </div>
+      </div>
+
+      <div id="school_show_12" class="school_chow_def">
+        <div class="school_show_body">
+          <div class="school_show_title">乖離率</div>
+          <p>乖離率的英文名稱為BIAS，在統計學上BIAS稱為「偏誤」，是用來衡量觀測值偏離其平均值的程度，這個意義同樣適用在股價的技術分析上，所以乖離率遂被借用成為技術分析的一項工具。乖離率的計算公式很簡單，但卻有深意：
+          </p>
+          <p>乖離率＝ ( 收盤價－平均值 ) ／ 平均值 * 100 %</p>
+          <p>乖離率的一個計算範例：<br>
+            首先選定某一特定天期的平均值，例如20天，那麼我們算的就是20天乖離率。假如我們選60天，那就是要計算60天乖離率，以此類推。表中C欄就是計算B欄的20天簡單平均值，將B欄值減去C欄值之後所得到的數字，再除以C欄值的結果，最後再換算成百分比，即得到D欄的乖離率值。比起其他技術指標來說，乖離率的公式可以說是非常簡單。
+          </p>
+          <p>從乖離率的公式可以看出，它指的是某日觀測值( 收盤價 )，偏離其平均值的比率，也就是乖離的程度，所以這個意義與統計學上的偏誤在觀念上是完全一致的。</p>
+        </div>
+      </div>
+
+      <div id="school_show_13" class="school_chow_def">
+        <div class="school_show_body">
+          <div class="school_show_title">河流圖</div>
+          <p>乖離率的應用－河流圖</p>
+          <p>一般我們所看到的技術分析圖形，都是將乖離率畫在K線圖下方。在看這種圖形時，需將同一天的K線與乖離率值上下對照，如果K線圖涵蓋的時間較長，可能無法看得很精確，而且對於任何一天K線圖的乖離率值也無法一目了然。</p>
+          <p>因此，我們發展出一種將K線圖與乖離率畫在一起的技術，稱之為「河流圖」。在圖中看到9條似乎是平行線的曲線，剛好完全把加權指數包起來，看起來確實很像河流，這是為何稱為河流圖的原因。</p>
+          <p>
+            在圖中請先注意9條線當中，最中間的第五條線，它是72天平均線，以此為中心，向上下各畫出四條線。它的畫法是將72MA乘以1.05，得到往上一條線，再乘以1.1，得到上面第二條，再乘以1.15與1.2，分別得到上面第三條與第四條線。往下則以72MA分別乘以0.95、0.9、0.85以及0.8，而得到往下的四條線。
+          </p>
+          <p>
+            接著就能明白圖形的用法了，如圖中的A點，剛好漲到最上面一條線，B點則是當時的72天平均成本，利用（A－B）/B得到的乖離率數字，剛好等於A點作落再最上一條線的乖離率數字，因為它是72MA乘以1.2所得到的，所以該點的乖離率是＋20％，而圖中的C點，剛好落再MA往上第三條線，所以乖離率是15％。
+          </p>
+          <p>由此可知，河流圖可以讓我們很精確的看出任何一天的K線位置所在的乖離率值大小。</p>
+          <p>河流圖中的移動平均天數，以及往上加與往下剪的比率，這兩個參數都是變數，可由使用人任意決定。使用的原則，就是能將涵蓋期間的K線圖完全包住，而得到一個合理波動的空間即可。</p>
+          <p>河流圖除了可以讓我們精確的判斷任一K線值的乖離率外，還可以讓我們據以了解法人機構常用的，所謂「金字塔操作法」的意義。</p>
+        </div>
+      </div>
+
+      <div id="school_show_14" class="school_chow_def">
+        <div class="school_show_body">
+          <div class="school_show_title">威廉指標</div>
+          <p>威廉指標的原文名稱為 Williams Overbought / Oversold Index，直譯為威廉氏超買超賣指標，可簡寫為 WMS；也有人稱為 百分比 R 指標，或者寫為 %R 指標。本指標是由 Larry William 所提出，故以其名為指標名稱。<br>
+          這個指標其實只是 KD指標 的一個簡化的變形，先徹底弄清楚 KD指標 的來龍去脈之後，再來學威廉指標就輕而易舉，所以我們先簡單介紹一下KD指標的計算方法。</p>
+          <p>在KD指標的計算法中， 第一步要算的「未成熟隨機值」，觀念類似 VA指標 ( 即修正OBV指標 ) 中的支撐部份， 此部份請參考修正OBV指標的介紹。<br>
+          第二步則是將算出的未成熟隨機值，以類似MACD理論中的指數平滑法求其平均值，用來追踪其趨勢。所以KD指標的理論簡言之，可以說它是一個「指數平滑後的下檔支撐指標」。</p>
+          <p>計算KD指標的第一步，先求出未成熟隨機值 ( Raw Stochastic Value，簡寫為RSV)， 其公式如下：<br>
+          　　　　　　　　　　第N天收盤價 － 最近N日內最低價<br>
+          RSV = ------------------------------------------------ X 100 <br>
+          　　　　　　　　最近N日內最高價 － 最近N日內最低價</p>
+          <p>威廉指標的公式如下：<br>
+          　　　　　　　　　　最近N日內最高價 － 第N天收盤價<br>
+          威廉指標 = --------------------------------------------- X -100 <br>
+          　　　　　　　　　　最近N日內最高價 － 最近N日內最低價</p>
+          <p>注意觀察這兩個公式的差異，會發現分母完全一樣，只是分子部份有差異，我們如果將這兩個公式的分子部份相加的話，<br>
+          那您會發現結果竟然等於「最近N日內最高價－最近N日內最低價」，跟分母是一模一樣。<br>
+          所以可知KD指標的RSV部份與威廉指標相加的和，一定是恆等於100的。</p>
+          <p>因此，我們已經瞭解，RSV說的是一段期間內股價下檔支撐的部份，而威廉指標說的是「一段期間內股價上檔壓力的部份」。再則，KD指標計算出RSV之後，還要進一步對RSV取平滑平均值，但是威廉指標並沒有這個部驟，顯然威廉指標只是KD指標的簡易變形版。</p>
+          <p>然而不對威廉指標計算出來的上檔壓力乘以-100的話，那麼這個指標值會變成與我們閱覽習慣相反的指標，投資人大多已習慣0為低檔而100高檔的KD指標閱覽方式。但在威廉指標中，如果今天收九天內最高價，則分子為0，所以指標值為0；當今天收九天內最低價時，則分子與分母相等，指標值會變成100。如果指標值在畫圖時，也畫成0在最下面而100在最上面時，則指標圖形狀會剛好呈現出高檔為0而低檔為100的上下顛倒情形，這種情形剛好與KD指標畫法完全相反，因而違反了大多數人對指標的閱覽習慣。因此，為了符合眾人的習慣，所以將之乘以-100，則０為股價高檔，而-100為股價低檔，這種指標呈現方式是目前最通用的方式。如果這種方式您還不習慣的話，那麼可以再將前述方式再加上100，那麼就會又變成100為高檔，而0為低檔的形狀，不過這種方式較少人使用。</p>
+          <p>為了增強威廉指標對於行情研判的能力，我們可以利用多條威廉指標線的綜合運用，來確認股價的走勢。附圖2為加權指數的威廉指標圖例，圖中我們同時使用三條不同天期的威廉指標線，分別是14、25以及42天。當這三天指標線在-20以上相互連結成一條線時，就是賣出點；而當這三條線在-80以下相互連結成一條線時，就是買進點。附圖2當中以紅色圓圈圈起來的部份就是其買賣點，從整個圖形來看，這個指標的準確度大為提高，少有失誤。不過圖中第一個圖圈之後，股價仍然上漲，三條不同天期的指標線都在高檔鈍化，這是因為在那一段期間股價上漲時間超過指標所定的42天的緣故，因此要改進這個缺失，或可以取不同的天期來檢驗看看。</p>          
+        </div>
+      </div>
+
+      <div id="school_show_15" class="school_chow_def">
+        <div class="school_show_body">
+          <div class="school_show_title">OBV</div>
+          <p><span class="content_txt_red">OBV能量潮指標</span>( On Balance Volume )簡稱為OBV，也有人稱之為人氣指標，是一種依據行情的漲跌，來累計或刪去市場的成交量值，而以此累算值作為市場行情動能變化趨勢的指標。同時它也是一種將一根一根起起伏伏不易觀察的成交量圖，轉變而成較易觀看分析的連續線圖的一種指標。</p>
+          <p>依據OBV創始者葛蘭碧(Joseph Granville)的看法，市場的動能應該是反應在成交量的變化，至於價格則只是一種外在的表徵而已。量是價的先行指標，先見量、後見價。成交量的多寡本身反應出市場交易的活絡度，同時也代表市場上人氣的興衰。</p>
+          <p>OBV指標在算法上相當簡單，只要依照行情的漲跌來累計市場上每日的成交量值即可。亦即是將上漲日的成交量值視為買進的正值累加，而下跌日的成交量值則視為賣出的負值減去，依此而得出漲勢與跌勢雙方動能消長的變化。詳細計算方式如下：</p>
+          <p>先任意設定一起始值OBV0，如10000。接著累算以後每日的OBV值：<br>
+          OBVt = OBVt-1 + Volume IF Closet ＞ Closet-1 <br>
+          OBVt = OBVt-1 - Volume IF Closet ＜ Closet-1 <br></p>
+          <p>其中t為當日值，t-1 為前一日值，Volume為當日的成交量值，Closet為當日的收盤價位，Closet-1為前一日的收盤價位。而為了使用來作判斷的價位值更具有實質意義，也不妨以當日的平均價位值來作累算OBV的判斷。</p>
+          <p>在研究OBV線圖時，主要的重點在於研究OBV線圖的走勢方向，而並非OBV值本身的大小。因為不同的起始點將會繪製出不同的OBV線圖值來，但是相對的OBV線型的走勢方向卻是不變的。同時OBV線經常與價位圖形一起配合使用，以判斷走勢是否成立。而當價位走勢與OBV走勢呈現背離或分歧時，經常是行情即將反轉的一個訊號。</p>
+          <p>當OBV搭配價位行情用來作趨勢分析時，各種可能的組合形情如下：<br>
+            <ul>
+              <li>當價位行情走勢呈現向下走低時，OBV的走勢可以用來判斷行情向下動能的強弱度。此時如果OBV向上走，表示這將是一段跌勢和緩而無力的下跌走勢；而如果OBV呈現牛皮不動時，表示這只是一般普通的下跌走勢；而如果OBV也呈現向下時，表示這將是一段強而有力的下跌走勢。</li>
+              <li>當價位行情走勢呈現牛皮盤局時，OBV的走勢可以用來判斷行情可能的變動方向。此時如果OBV向上走，是為收集(Accumulation)現象，即市場大戶逢低進貨、逢高出貨暗地裡多進少出而補進籌碼的現象，也可能代表底部的即將形成；而如果OBV也呈現牛皮不動時，則無訊息可供判斷；而如果OBV呈現向下時，是為分發(Distribution)現象，即市場大戶高賣低買而暗地裡多出少進以出脫手中籌碼的現象，也代表著頭部的即將形成。</li>
+              <li>當價位行情走勢呈現向上走高時，OBV的走勢可以用來判斷此時行情上漲動能的強弱度。此時如果OBV也呈現向上走勢時，表示這將是一段強勁的上昇走勢；而如果OBV呈現出牛皮不動時，表示這只是一般普通的上昇走勢；而如果OBV呈現向下時，表示這將是一段疲軟而無力的上昇走勢。</li>
+              <li>OBV經常會以明顯的N字型的走式來作上昇或下跌，而當OBV線以N字型上昇且越過N字型的高點時，可以視之為短線買進的訊號；而當OBV線下跌過N字型的低點時，可以視之為短線賣出的訊號。</li>
+              <li>而如果遇上急升或急降後的OBV線，則有可能意味著量能的即將用盡，應注意行情的反轉。同時OBV指標並不太適合應用於期貨商品，原因是期貨商品在愈接近交割日期時，交易量會自然的活絡起來，因此而影響到OBV的累算結果。</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 投資小學堂 END -->
+
+  <!-- Footer -->
+  <script src="./js/footer.js"></script>
+
+  <script src="./js/navbody.js"></script>
+
+  <!-- 投資小學堂 明細顯示控制 -->
+  <script>
+    $("#school_Th").click(function () {
+      $("#school_index").show();
+      // $('#school_menu').css('display', 'flex');
+      $("#school_show_01").hide();
+      $("#school_show_02").hide();
+      $("#school_show_03").hide();
+      $("#school_show_04").hide();
+      $("#school_show_05").hide();
+      $("#school_show_06").hide();
+      $("#school_show_07").hide();
+      $("#school_show_08").hide();
+      $("#school_show_09").hide();
+      $("#school_show_10").hide();
+      $("#school_show_11").hide();
+      $("#school_show_12").hide();
+      $("#school_show_13").hide();
+      $("#school_show_14").hide();
+      $("#school_show_15").hide();
+    });
+    $("#school_item_01").click(function () {
+      $("#school_index").hide();
+      // $('#school_menu').css('display', 'flex');
+      $("#school_show_01").show();
+      $("#school_show_02").hide();
+      $("#school_show_03").hide();
+      $("#school_show_04").hide();
+      $("#school_show_05").hide();
+      $("#school_show_06").hide();
+      $("#school_show_07").hide();
+      $("#school_show_08").hide();
+      $("#school_show_09").hide();
+      $("#school_show_10").hide();
+      $("#school_show_11").hide();
+      $("#school_show_12").hide();
+      $("#school_show_13").hide();
+      $("#school_show_14").hide();
+      $("#school_show_15").hide();
+    });
+    $("#school_item_02").click(function () {
+      $("#school_index").hide();
+      // $('#school_menu').css('display', 'flex');
+      $("#school_show_01").hide();
+      $("#school_show_02").show();
+      $("#school_show_03").hide();
+      $("#school_show_04").hide();
+      $("#school_show_05").hide();
+      $("#school_show_06").hide();
+      $("#school_show_07").hide();
+      $("#school_show_08").hide();
+      $("#school_show_09").hide();
+      $("#school_show_10").hide();
+      $("#school_show_11").hide();
+      $("#school_show_12").hide();
+      $("#school_show_13").hide();
+      $("#school_show_14").hide();
+      $("#school_show_15").hide();
+    });
+    $("#school_item_03").click(function () {
+      $("#school_index").hide();
+      // $('#school_menu').css('display', 'flex');
+      $("#school_show_01").hide();
+      $("#school_show_02").hide();
+      $("#school_show_03").show();
+      $("#school_show_04").hide();
+      $("#school_show_05").hide();
+      $("#school_show_06").hide();
+      $("#school_show_07").hide();
+      $("#school_show_08").hide();
+      $("#school_show_09").hide();
+      $("#school_show_10").hide();
+      $("#school_show_11").hide();
+      $("#school_show_12").hide();
+      $("#school_show_13").hide();
+      $("#school_show_14").hide();
+      $("#school_show_15").hide();
+    });
+    $("#school_item_04").click(function () {
+      $("#school_index").hide();
+      // $('#school_menu').css('display', 'flex');
+      $("#school_show_01").hide();
+      $("#school_show_02").hide();
+      $("#school_show_03").hide();
+      $("#school_show_04").show();
+      $("#school_show_05").hide();
+      $("#school_show_06").hide();
+      $("#school_show_07").hide();
+      $("#school_show_08").hide();
+      $("#school_show_09").hide();
+      $("#school_show_10").hide();
+      $("#school_show_11").hide();
+      $("#school_show_12").hide();
+      $("#school_show_13").hide();
+      $("#school_show_14").hide();
+      $("#school_show_15").hide();
+    });
+    $("#school_item_05").click(function () {
+      $("#school_index").hide();
+      // $('#school_menu').css('display', 'flex');
+      $("#school_show_01").hide();
+      $("#school_show_02").hide();
+      $("#school_show_03").hide();
+      $("#school_show_04").hide();
+      $("#school_show_05").show();
+      $("#school_show_06").hide();
+      $("#school_show_07").hide();
+      $("#school_show_08").hide();
+      $("#school_show_09").hide();
+      $("#school_show_10").hide();
+      $("#school_show_11").hide();
+      $("#school_show_12").hide();
+      $("#school_show_13").hide();
+      $("#school_show_14").hide();
+      $("#school_show_15").hide();
+    });
+    $("#school_item_06").click(function () {
+      $("#school_index").hide();
+      // $('#school_menu').css('display', 'flex');
+      $("#school_show_01").hide();
+      $("#school_show_02").hide();
+      $("#school_show_03").hide();
+      $("#school_show_04").hide();
+      $("#school_show_05").hide();
+      $("#school_show_06").show();
+      $("#school_show_07").hide();
+      $("#school_show_08").hide();
+      $("#school_show_09").hide();
+      $("#school_show_10").hide();
+      $("#school_show_11").hide();
+      $("#school_show_12").hide();
+      $("#school_show_13").hide();
+      $("#school_show_14").hide();
+      $("#school_show_15").hide();
+    });
+    $("#school_item_07").click(function () {
+      $("#school_index").hide();
+      // $('#school_menu').css('display', 'flex');
+      $("#school_show_01").hide();
+      $("#school_show_02").hide();
+      $("#school_show_03").hide();
+      $("#school_show_04").hide();
+      $("#school_show_05").hide();
+      $("#school_show_06").hide();
+      $("#school_show_07").show();
+      $("#school_show_08").hide();
+      $("#school_show_09").hide();
+      $("#school_show_10").hide();
+      $("#school_show_11").hide();
+      $("#school_show_12").hide();
+      $("#school_show_13").hide();
+      $("#school_show_14").hide();
+      $("#school_show_15").hide();
+    });
+    $("#school_item_08").click(function () {
+      $("#school_index").hide();
+      // $('#school_menu').css('display', 'flex');
+      $("#school_show_01").hide();
+      $("#school_show_02").hide();
+      $("#school_show_03").hide();
+      $("#school_show_04").hide();
+      $("#school_show_05").hide();
+      $("#school_show_06").hide();
+      $("#school_show_07").hide();
+      $("#school_show_08").show();
+      $("#school_show_09").hide();
+      $("#school_show_10").hide();
+      $("#school_show_11").hide();
+      $("#school_show_12").hide();
+      $("#school_show_13").hide();
+      $("#school_show_14").hide();
+      $("#school_show_15").hide();
+    });
+    $("#school_item_09").click(function () {
+      $("#school_index").hide();
+      // $('#school_menu').css('display', 'flex');
+      $("#school_show_01").hide();
+      $("#school_show_02").hide();
+      $("#school_show_03").hide();
+      $("#school_show_04").hide();
+      $("#school_show_05").hide();
+      $("#school_show_06").hide();
+      $("#school_show_07").hide();
+      $("#school_show_08").hide();
+      $("#school_show_09").show();
+      $("#school_show_10").hide();
+      $("#school_show_11").hide();
+      $("#school_show_12").hide();
+      $("#school_show_13").hide();
+      $("#school_show_14").hide();
+      $("#school_show_15").hide();
+    });
+    $("#school_item_10").click(function () {
+      $("#school_index").hide();
+      // $('#school_menu').css('display', 'flex');
+      $("#school_show_01").hide();
+      $("#school_show_02").hide();
+      $("#school_show_03").hide();
+      $("#school_show_04").hide();
+      $("#school_show_05").hide();
+      $("#school_show_06").hide();
+      $("#school_show_07").hide();
+      $("#school_show_08").hide();
+      $("#school_show_09").hide();
+      $("#school_show_10").show();
+      $("#school_show_11").hide();
+      $("#school_show_12").hide();
+      $("#school_show_13").hide();
+      $("#school_show_14").hide();
+      $("#school_show_15").hide();
+    });
+    $("#school_item_11").click(function () {
+      $("#school_index").hide();
+      // $('#school_menu').css('display', 'flex');
+      $("#school_show_01").hide();
+      $("#school_show_02").hide();
+      $("#school_show_03").hide();
+      $("#school_show_04").hide();
+      $("#school_show_05").hide();
+      $("#school_show_06").hide();
+      $("#school_show_07").hide();
+      $("#school_show_08").hide();
+      $("#school_show_09").hide();
+      $("#school_show_10").hide();
+      $("#school_show_11").show();
+      $("#school_show_12").hide();
+      $("#school_show_13").hide();
+      $("#school_show_14").hide();
+      $("#school_show_15").hide();
+    });
+    $("#school_item_12").click(function () {
+      $("#school_index").hide();
+      // $('#school_menu').css('display', 'flex');
+      $("#school_show_01").hide();
+      $("#school_show_02").hide();
+      $("#school_show_03").hide();
+      $("#school_show_04").hide();
+      $("#school_show_05").hide();
+      $("#school_show_06").hide();
+      $("#school_show_07").hide();
+      $("#school_show_08").hide();
+      $("#school_show_09").hide();
+      $("#school_show_10").hide();
+      $("#school_show_11").hide();
+      $("#school_show_12").show();
+      $("#school_show_13").hide();
+      $("#school_show_14").hide();
+      $("#school_show_15").hide();
+    });
+    $("#school_item_13").click(function () {
+      $("#school_index").hide();
+      // $('#school_menu').css('display', 'flex');
+      $("#school_show_01").hide();
+      $("#school_show_02").hide();
+      $("#school_show_03").hide();
+      $("#school_show_04").hide();
+      $("#school_show_05").hide();
+      $("#school_show_06").hide();
+      $("#school_show_07").hide();
+      $("#school_show_08").hide();
+      $("#school_show_09").hide();
+      $("#school_show_10").hide();
+      $("#school_show_11").hide();
+      $("#school_show_12").hide();
+      $("#school_show_13").show();
+      $("#school_show_14").hide();
+      $("#school_show_15").hide();
+    });
+    $("#school_item_14").click(function () {
+      $("#school_index").hide();
+      // $('#school_menu').css('display', 'flex');
+      $("#school_show_01").hide();
+      $("#school_show_02").hide();
+      $("#school_show_03").hide();
+      $("#school_show_04").hide();
+      $("#school_show_05").hide();
+      $("#school_show_06").hide();
+      $("#school_show_07").hide();
+      $("#school_show_08").hide();
+      $("#school_show_09").hide();
+      $("#school_show_10").hide();
+      $("#school_show_11").hide();
+      $("#school_show_12").hide();
+      $("#school_show_13").hide();
+      $("#school_show_14").show();
+      $("#school_show_15").hide();
+    });
+    $("#school_item_15").click(function () {
+      $("#school_index").hide();
+      // $('#school_menu').css('display', 'flex');
+      $("#school_show_01").hide();
+      $("#school_show_02").hide();
+      $("#school_show_03").hide();
+      $("#school_show_04").hide();
+      $("#school_show_05").hide();
+      $("#school_show_06").hide();
+      $("#school_show_07").hide();
+      $("#school_show_08").hide();
+      $("#school_show_09").hide();
+      $("#school_show_10").hide();
+      $("#school_show_11").hide();
+      $("#school_show_12").hide();
+      $("#school_show_13").hide();
+      $("#school_show_14").hide();
+      $("#school_show_15").show();
+    });
+  </script>
+
+</body>
+
+</html>
