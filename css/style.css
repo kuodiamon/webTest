@@ -289,7 +289,7 @@ body {
   width: 100%;
   min-height: 600px;
   /* background-image: url(../images/school.jpg); */
-  background-image: url(../images/case_index.jpg);
+  /* background-image: url(../images/case_index.jpg); */
   background-size: cover;
 }
 /* 投資小學堂標題 */
@@ -321,7 +321,7 @@ body {
 #school_index {
   display: inline-flex;
   flex-wrap: wrap;
-  justify-content: center;
+  /* justify-content: center; */
 }
 /* 投資小學堂-內文區 */
 .school_show_body {
@@ -358,8 +358,8 @@ body {
 .school_show {
   margin: 30px 24px;
   width: 250px;
-  height: 90px;
-  border-radius: 50%;
+  height: 150px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
   border: 1px solid white;
   box-shadow: 0 1px 0 #ccc, 0 5px 0 #aaa, 0 0 5px rgba(0, 0, 0, 0.1),
     0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
@@ -384,10 +384,10 @@ body {
 }
 /* for .school_show STR */
 .school_show_color1 {
-  background: linear-gradient(rgb(72, 255, 0), rgb(1, 90, 8));
+  background: radial-gradient(#FFFFFF, #4E598C);
 }
 .school_show_color2 {
-  background: linear-gradient(rgb(73, 252, 213), rgb(0, 88, 66));
+  background: radial-gradient(#FFFFFF , #392F5A);
 }
 .school_show_color3 {
   background: #d7b49e;
